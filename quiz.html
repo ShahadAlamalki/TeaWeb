@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اختبار نكهة الشاي 🍵</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="quiz.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+<div class="background">
+  <div class="blob"></div>
+  <div class="blob"></div>
+</div>
+
+<section class="quiz-container">
+  <h1> أي نكهة شاي تشبهك؟</h1>
+  <p class="subtitle">اختياراتك اليومية تكشف مزاجك أكثر مما تعتقد</p>
+
+  <div class="quiz-card">
+
+    <label>لو صار عندك وقت فراغ غير متوقّع</label>
+    <select id="q1">
+      <option value="">اختر</option>
+      <option value="calm">أجلس بهدوء وأفصل عن العالم</option>
+      <option value="focus">أستغل الوقت في شي مفيد</option>
+      <option value="social">أتواصل مع شخص قريب</option>
+      <option value="energy">أطلع أو أغيّر جو</option>
+    </select>
+
+    <label>أي أجواء تريحك أكثر؟</label>
+    <select id="q2">
+      <option value="">اختر</option>
+      <option value="nature">طبيعة وهواء مفتوح</option>
+      <option value="warm">مكان دافئ وهادئ</option>
+      <option value="bright">إضاءة وشمس</option>
+      <option value="cozy">غرفة بسيطة ومريحة</option>
+    </select>
+
+    <label>كيف تتعامل مع الضغط؟</label>
+    <select id="q3">
+      <option value="">اختر</option>
+      <option value="slow">أهدأ وأمشي الأمور على مهل</option>
+      <option value="logic">أفكر بعقلانية وأحل المشكلة</option>
+      <option value="release">أفرّغ الضغط بشي أحبه</option>
+      <option value="ignore">أتجاهله لين يخف</option>
+    </select>
+
+    <button onclick="showResult()">اعرف النكهة </button>
+
+    <div class="result">
+      <span class="result-icon" id="resultIcon"></span>
+      <span class="result-text" id="resultText"></span>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="back-link"> ← الرجوع للصفحة الرئيسية</a>
+</section>
+
+<footer>
+      🤍 2026
+</footer>
+
+<script src="quiz.js"></script>
+</body>
+</html>

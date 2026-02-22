@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عالم شهد 🌿</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="tea.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <div class="background-blur">
+    <div class="blob"></div>
+    <div class="blob"></div>    
+</div>
+
+<section class="hero">
+    <h1>ركن شهد لنكهات الشاي</h1>
+    <p>أهلاً بك في عالمي, اختر كوباً لنتحدث قليلاً</p>
+</section>
+
+<section class="tea-section">
+
+    <div class="tea-card" data-tea="lavender">
+        <i data-lucide="flower-2"></i>
+        <h3>شاي اللافندر</h3>
+    </div>
+
+    <div class="tea-card" data-tea="peach">
+        <i data-lucide="apple"></i>
+        <h3>شاي الخوخ</h3>
+    </div>
+
+    <div class="tea-card" data-tea="berry">
+        <i data-lucide="grape"></i>
+        <h3>شاي التوت</h3>
+    </div>
+
+    <div class="tea-card" data-tea="green">
+        <i data-lucide="leaf"></i>
+        <h3>الشاي الأخضر</h3>
+    </div>
+
+</section>
+      <a href="quiz.html" class="back-link"> الذهاب الى اختبار النكهات ←</a>
+
+<div class="modal" id="teaModal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="teaTitle"></h2>
+        <p id="teaStory"></p>
+        <ul id="teaBenefits"></ul>
+    </div>
+</div>
+<footer>
+      🤍 2026
+</footer>
+
+<script src="tea.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+:root {
+  --dark: #0f3f2e;
+  --glass: rgba(255,255,255,0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: var(--dark);
+  transition: background 1s ease;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.blob {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.5;
+  animation: float 18s infinite alternate;
+}
+
+.blob:first-child {
+  background: #d2ead4;
+  top: 10%;
+  left: 10%;
+}
+
+.blob:last-child {
+  background: #ffd8e5;
+  bottom: 10%;
+  right: 10%;
+}
+
+@keyframes float {
+  to { transform: translate(80px, 60px); }
+}
+
+.quiz-container {
+  max-width: 650px;
+  margin: auto;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.quiz-container h1 {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 2.6rem;
+}
+
+.subtitle {
+  color: #78909c;
+  margin: 10px 0 40px;
+}
+
+.quiz-card {
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  padding: 40px 30px;
+  border-radius: 30px;
+}
+
+.quiz-card label {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.quiz-card select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+}
+
+.quiz-card button {
+  margin-top: 35px;
+  padding: 12px 36px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(45deg, #0f3f2e, #e10b52);
+  color: white;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  min-height: 40px;
+}
+
+.result-icon {
+  font-size: 1.6rem;
+}
+
+/* ألوان الخلفية */
+body.green { background: linear-gradient(135deg, #eef7f0, #dcefe3); }
+body.lavender { background: linear-gradient(135deg, #f5f0f7, #e6dff0); }
+body.peach { background: linear-gradient(135deg, #fff4ec, #ffe1cc); }
+body.berry { background: linear-gradient(135deg, #f7f1f4, #f0d9e4); }
+body.chamomile { background: linear-gradient(135deg, #fffbe6, #f3ecc8); }
+body.fruit { background: linear-gradient(135deg, #fff0f0, #ffdede); }
+body.red { background: linear-gradient(135deg, #fbe9e9, #f3cfcf); }
+
+footer {
+    text-align: center;
+    padding: 80px 20px 40px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: var(--dark);
+  opacity: 0.7;
+}
+
+.back-link:hover {
+  color: #e10b52d1;
+}
