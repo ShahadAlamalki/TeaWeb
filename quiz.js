@@ -24,43 +24,36 @@ function showResult() {
   document.body.className = "";
 
   let tea = "";
-  let emoji = "";
   let theme = "";
 
   if (q1 === "calm" && q3 === "slow") {
     tea = "شاي البابونج";
-    emoji = "🍯🌼";
     theme = "chamomile";
   }
   else if (q2 === "nature" && q1 === "focus") {
     tea = "الشاي الأخضر";
-    emoji = "🍃✨";
     theme = "green";
   }
   else if (q3 === "logic") {
     tea = "الشاي الأحمر";
-    emoji = "❤️☕";
     theme = "red";
   }
   else if (q1 === "energy") {
     tea = "شاي الفواكه";
-    emoji = "🍎🍓";
     theme = "fruit";
   }
   else if (q2 === "warm") {
     tea = "شاي اللافندر";
-    emoji = "🌸🌙";
     theme = "lavender";
   }
   else {
     tea = "شاي الخوخ";
-    emoji = "🍑☀️";
     theme = "peach";
   }
 
   document.body.classList.add(theme);
-  icon.textContent = emoji;
   text.textContent = `النكهة الأقرب لك: ${tea}`;
 
   gsap.from(".result", { opacity: 0, y: 10, duration: 0.4 });
+
 }
