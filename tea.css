@@ -75,6 +75,16 @@ body {
     color: #78909c;
 }
 
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 10px;
+  padding: 20px;
+  text-align: center;
+  color: #607d8b;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
 .tea-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -206,4 +216,5 @@ footer {
 
 .background-blur .blob:nth-child(1) { top: 10%; left: 10%; }
 .background-blur .blob:nth-child(2) { bottom: 10%; right: 10%; }
+
 
